@@ -1,0 +1,12 @@
+.criar{
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.input {
+    background: var(--gray-400);
+    height: 54px;
+    width: 50rem;
+}
