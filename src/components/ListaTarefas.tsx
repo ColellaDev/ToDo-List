@@ -1,8 +1,9 @@
-import styles from './Tarefas.module.css';
+import styles from './ListaTarefas.module.css';
+import { Tarefa } from "./Tarefa";
 
-export function Tarefas() {
+export function ListaTarefas() {
     return (
-        <div className={styles.tarefas}>
+        <div className={styles.listaTarefas}>
 
              <div className={styles.contadores}>
                 <div className={styles.tarefasCriadas}>
@@ -14,6 +15,13 @@ export function Tarefas() {
                      <span>2 de 5</span>
                 </div>
             </div>
+
+            <div className={styles.tarefas}>
+            <Tarefa/>
+            <Tarefa/>
+            <Tarefa/>
+            </div>
+            
 
         </div>
     )
