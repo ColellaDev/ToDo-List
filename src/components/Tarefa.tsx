@@ -3,7 +3,11 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { FaRegCircle } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 
-export function Tarefa() {
+interface TarefaProps {
+    content: string;
+}
+
+export function Tarefa({content}:TarefaProps) {
     return (
         <div className={styles.tarefa}>
 
@@ -11,7 +15,7 @@ export function Tarefa() {
                 <FaRegCircle/>
             </button>
 
-           <p>Integer urnateger urtees innteger urna intees integer.</p> 
+           <p>{content}</p> 
 
            <button className={styles.deletarTarefa} title="Deletar tarefa">
                 <FaRegTrashAlt />

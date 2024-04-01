@@ -17,9 +17,8 @@ export function ListaTarefas() {
             </div>
 
             <div className={styles.tarefas}>
-            <Tarefa/>
-            <Tarefa/>
-            <Tarefa/>
+            <Tarefa content="teste"/>
+            
             </div>
             
 

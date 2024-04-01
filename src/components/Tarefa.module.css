@@ -1,6 +1,5 @@
 .tarefa {
     display: flex;
-    
     background: var(--gray-400);
     padding: 16px;
     border-radius: 5px;
