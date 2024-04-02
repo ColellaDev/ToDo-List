@@ -1,7 +1,7 @@
 import styles from "./Tarefa.module.css";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { FaRegCircle } from "react-icons/fa";
-import { FaCheckCircle } from "react-icons/fa";
+//import { FaCheckCircle } from "react-icons/fa";
 
 interface TarefaProps {
     content: string;

@@ -1,7 +1,15 @@
+import { useState } from 'react';
 import styles from './ListaTarefas.module.css';
 import { Tarefa } from "./Tarefa";
 
 export function ListaTarefas() {
+
+const [tarefas, setTarefas] = useState([1, 2])
+
+function criarNovaTarefa() {
+    setTarefas([...tarefas, tarefas.length + 1])
+}
+
     return (
         <div className={styles.listaTarefas}>
 
@@ -17,8 +25,9 @@ export function ListaTarefas() {
             </div>
 
             <div className={styles.tarefas}>
-            <Tarefa content="teste"/>
-            
+                 {tarefas.map(tarefa => {
+                   return <Tarefa content="teste"/>
+                 })}
             </div>
             
 
