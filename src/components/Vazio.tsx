@@ -8,7 +8,7 @@ export function Vazio() {
             <div className={styles.risco}></div>
 
             <div>
-            <img src={notas} alt="Bloco de Notas" />
+                <img src={notas} alt="Bloco de Notas" />
             </div>
 
             <div className={styles.conteudo}>

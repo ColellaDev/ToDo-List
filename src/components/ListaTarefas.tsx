@@ -12,7 +12,6 @@ interface ListaTarefasProps {
 
 export function ListaTarefas({ tarefas, deletarTarefa, completarTarefa}:ListaTarefasProps) {
 
-
     return (
         <div className={styles.listaTarefas}>
 

@@ -10,7 +10,6 @@ export interface Tarefas {
   completed: Boolean
 }
 
-
 export function App() {
   
   const [tarefas, setTarefas] = useState<Tarefas[]>([]);
@@ -38,7 +37,6 @@ export function App() {
   });
   setTarefas(novasTarefas);
   }
-
 
   return (
     <>
