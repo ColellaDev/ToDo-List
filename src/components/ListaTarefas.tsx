@@ -1,14 +1,10 @@
-import { useState } from 'react';
+
 import styles from './ListaTarefas.module.css';
 import { Tarefa } from "./Tarefa";
+import { Vazio } from './Vazio';
 
-export function ListaTarefas() {
+export function ListaTarefas({ tarefas, deletarTarefa, completarTarefa}) {
 
-const [tarefas, setTarefas] = useState([1, 2])
-
-function criarNovaTarefa() {
-    setTarefas([...tarefas, tarefas.length + 1])
-}
 
     return (
         <div className={styles.listaTarefas}>
@@ -16,21 +12,34 @@ function criarNovaTarefa() {
              <div className={styles.contadores}>
                 <div className={styles.tarefasCriadas}>
                      <h3>Tarefas criadas</h3>
-                     <span>5</span>
+                     <span>{tarefas.length}</span>
                 </div>
                 <div className={styles.tarefasConcluidas}>
                      <h3>Concluídas</h3>
-                     <span>2 de 5</span>
+                     <span>{tarefas.filter(tarefa => tarefa.completed).length} de {tarefas.length}</span>
                 </div>
             </div>
 
-            <div className={styles.tarefas}>
-                 {tarefas.map(tarefa => {
-                   return <Tarefa content="teste"/>
-                 })}
-            </div>
-            
-
+            <div>
+                {tarefas.length > 0 ? (
+                    <div className={styles.tarefas}>
+                    {tarefas.map((tarefa, index) => {
+                    return (
+                        <Tarefa 
+                         key={index} 
+                         content={tarefa.content} 
+                         completed={tarefa.completed}
+                         onComplete={()=> completarTarefa(index)} 
+                         onDelete={() => deletarTarefa(index)} 
+                         />
+                    );
+                     })}
+                     </div>
+                 ) : (
+                <Vazio/>
+                 )}
+           </div>
+         
         </div>
     )
 }
