@@ -1,7 +1,7 @@
 
 import styles from './ListaTarefas.module.css';
-import { Tarefa } from "./Tarefa";
-import { Vazio } from './Vazio';
+import { Tarefa } from "./Tarefa.tsx";
+import { Vazio } from './Vazio.tsx';
 
 export function ListaTarefas({ tarefas, deletarTarefa, completarTarefa}) {
 
