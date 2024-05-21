@@ -2,7 +2,11 @@ import styles from './CriarTarefa.module.css';
 import { FiPlusCircle } from "react-icons/fi";
 import { useState } from 'react';
 
-export function CriarTarefa({criarNovaTarefa}) {
+interface CriarTarefaProps {
+    criarNovaTarefa: (novaTarefaContent:String) => void
+}
+
+export function CriarTarefa({criarNovaTarefa}:CriarTarefaProps) {
 
     const [inputValue, setInputValue] = useState("")
 

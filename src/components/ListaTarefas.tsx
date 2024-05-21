@@ -1,9 +1,16 @@
-
 import styles from './ListaTarefas.module.css';
 import { Tarefa } from "./Tarefa.tsx";
 import { Vazio } from './Vazio.tsx';
 
-export function ListaTarefas({ tarefas, deletarTarefa, completarTarefa}) {
+import { Tarefas } from '../App.tsx';
+
+interface ListaTarefasProps {
+    tarefas: Tarefas[]
+    deletarTarefa: (index:number) => void
+    completarTarefa: (index:number) => void
+}
+
+export function ListaTarefas({ tarefas, deletarTarefa, completarTarefa}:ListaTarefasProps) {
 
 
     return (
