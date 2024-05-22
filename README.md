@@ -1,7 +1,7 @@
 # ToDo List
 
 
-https://github.com/ColellaDev/ToDo-List/assets/91292125/203c69c5-1298-4fbd-ad8c-54ef39b4dd80
+https://github.com/ColellaDev/ToDo-List/assets/91292125/d55e8d15-1108-4c61-99db-65c1cdf2caf1
 
 
 ## Sobre o Projeto
@@ -20,7 +20,7 @@ Durante o desenvolvimento deste projeto, reforcei meus conhecimentos com TypeScr
 
 ## Deploy
 
-A ToDo List está disponível em 
+A ToDo List está disponível em https://todolistcolella.netlify.app/
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcos-colella-esteves-952a3866/)
