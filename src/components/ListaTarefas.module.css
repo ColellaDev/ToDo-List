@@ -5,6 +5,12 @@
     margin: 64px auto;
 }
 
+@media (max-width: 769px) {
+    .listaTarefas  {
+        padding:  0 2rem;
+    }
+  }
+
 .contadores {
     display: flex;
     justify-content: space-between;

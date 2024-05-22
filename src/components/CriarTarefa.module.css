@@ -5,6 +5,11 @@
     gap: 8px;
 }
 
+@media (max-width: 769px) {
+    .criar {
+        padding:  0 2rem;
+    }
+  }
 
 .input {
     background: var(--gray-400);
