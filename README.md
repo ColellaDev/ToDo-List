@@ -1,9 +1,5 @@
 # ToDo List
-
-
-https://github.com/ColellaDev/ToDo-List/assets/91292125/d55e8d15-1108-4c61-99db-65c1cdf2caf1
-
-
+https://github.com/ColellaDev/ToDo-List/assets/91292125/e5dd32a6-98cd-4476-93ad-e509a83b1752
 ## Sobre o Projeto
 
 Desenvolvi essa aplicação para gerenciar uma Lista de Tarefas. Nesta plataforma, os usuários podem adicionar novas tarefas, marcá-las como concluídas e excluí-las conforme necessário. O objetivo é oferecer uma ferramenta eficiente e intuitiva para ajudar na organização e gestão de tarefas diárias, promovendo produtividade e eficiência. 
